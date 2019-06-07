@@ -1,0 +1,267 @@
+  <!-- Sidebar -->
+  <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+    <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+    <!-- Bootstrap List Group -->
+    <ul class="list-group" style="font-size: 14px;">
+
+      <li class="list-group-item logo-separator d-flex justify-content-center">
+        <img src='https://img.icons8.com/color/612/000000/squirrel.png' width="50" height="50" />
+        <!-- http://squirrel.eu5.net/images/sujee.jpg -->
+      </li>
+      <!-- Separator with title -->
+      <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+        <small>MAIN MENU</small>
+      </li>
+      <!-- /END Separator -->
+
+      <!-- Menu with submenu -->
+      <a href="#bInventory" data-toggle="collapse" aria-expanded="false"
+        class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-dashboard fa-fw mr-3"></span>
+          <span class="menu-collapsed">Inventory</span>
+          <span class="submenu-icon ml-auto"></span>
+        </div>
+      </a>
+      <!-- Submenu content -->
+      <div id='bInventory' class="collapse sidebar-submenu">
+        <!-- <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Purchase Requisition</span>
+        </a> -->
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Purchase Order</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Item Recieve</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Item Recieve Return</span>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Issue Entry</span>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Issue Return</span>
+        </a>
+      </div>
+
+      <!-- Menu with submenu -->
+      <a href="#bTransfer" data-toggle="collapse" aria-expanded="false"
+        class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-dashboard fa-fw mr-3"></span>
+          <span class="menu-collapsed">Transfer</span>
+          <span class="submenu-icon ml-auto"></span>
+        </div>
+      </a>
+      <!-- Submenu content -->
+      <div id='bTransfer' class="collapse sidebar-submenu">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Inter Location Transfer</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Damage Stock Transfer</span>
+        </a>
+      </div>
+
+      <a href="#bSales" data-toggle="collapse" aria-expanded="false"
+        class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-user fa-fw mr-3"></span>
+          <span class="menu-collapsed">Sales</span>
+          <span class="submenu-icon ml-auto"></span>
+        </div>
+      </a>
+      <!-- Submenu content -->
+      <div id='bSales' class="collapse sidebar-submenu">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Invoice</span>
+        </a>
+        <a routerLink="/user-profile" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Invoice Approval</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Dispatch Entry</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Cash Sale</span>
+        </a>
+      </div>
+
+
+      <a href="#bPayable" data-toggle="collapse" aria-expanded="false"
+        class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-user fa-fw mr-3"></span>
+          <span class="menu-collapsed">Acc Payable</span>
+          <span class="submenu-icon ml-auto"></span>
+        </div>
+      </a>
+      <!-- Submenu content -->
+      <div id='bPayable' class="collapse sidebar-submenu">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Payment Voucher</span>
+        </a>
+        <a routerLink="/user-profile" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Credit Note</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Debit Note</span>
+        </a>
+      </div>
+
+
+      <a href="#bReceivable" data-toggle="collapse" aria-expanded="false"
+        class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-user fa-fw mr-3"></span>
+          <span class="menu-collapsed">Acc Receivable</span>
+          <span class="submenu-icon ml-auto"></span>
+        </div>
+      </a>
+      <!-- Submenu content -->
+      <div id='bReceivable' class="collapse sidebar-submenu">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Receipt</span>
+        </a>
+        <a routerLink="/user-profile" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Credit Note</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Debit Note</span>
+        </a>
+      </div>
+
+
+      <!-- <a href="#bAccounts" data-toggle="collapse" aria-expanded="false"
+        class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-user fa-fw mr-3"></span>
+          <span class="menu-collapsed">General Ledger</span>
+          <span class="submenu-icon ml-auto"></span>
+        </div>
+      </a>
+
+      <div id='bAccounts' class="collapse sidebar-submenu">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Journal Entry</span>
+        </a>
+        <a routerLink="/user-profile" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Bank Reconcillation</span>
+        </a>
+      </div> -->
+
+
+      <!-- Separator with title -->
+      <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+        <small>OPTIONS</small>
+      </li>
+      <!-- /END Separator -->
+
+      <a href="#submenu6" data-toggle="collapse" aria-expanded="false"
+        class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-user fa-fw mr-3"></span>
+          <span class="menu-collapsed">Settings</span>
+          <span class="submenu-icon ml-auto"></span>
+        </div>
+      </a>
+      <!-- Submenu content -->
+      <div id='submenu6' class="collapse sidebar-submenu">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Company Profile</span>
+        </a>
+        <a routerLink="/user-profile" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">User Profile</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">User Access</span>
+        </a>
+      </div>
+
+
+
+      <a href="#bEntity" data-toggle="collapse" aria-expanded="false"
+        class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-user fa-fw mr-3"></span>
+          <span class="menu-collapsed">Entity</span>
+          <span class="submenu-icon ml-auto"></span>
+        </div>
+      </a>
+      <!-- Submenu content -->
+      <div id='bEntity' class="collapse sidebar-submenu">
+        <a routerLink="/item-group" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Item Group</span>
+        </a>
+        <a routerLink="/user-profile" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Item Type</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Item</span>
+        </a>
+      </div>
+
+      <a href="#submenu8" data-toggle="collapse" aria-expanded="false"
+        class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-user fa-fw mr-3"></span>
+          <span class="menu-collapsed">Reports</span>
+          <span class="submenu-icon ml-auto"></span>
+        </div>
+      </a>
+      <!-- Submenu content -->
+      <div id='submenu8' class="collapse sidebar-submenu">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Company Profile</span>
+        </a>
+        <a routerLink="/user-profile" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">User Profile</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">User Access</span>
+        </a>
+      </div>
+
+
+
+      <a href="#" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-calendar fa-fw mr-3"></span>
+          <span class="menu-collapsed">Calendar</span>
+        </div>
+      </a>
+      <a href="#" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-envelope-o fa-fw mr-3"></span>
+          <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary ml-2">5</span></span>
+        </div>
+      </a>
+      <!-- Separator without title -->
+      <li class="list-group-item sidebar-separator menu-collapsed"></li>
+      <!-- /END Separator -->
+      <a href="#" class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-question fa-fw mr-3"></span>
+          <span class="menu-collapsed">Help</span>
+        </div>
+      </a>
+
+      <a href="#" data-toggle="sidebar-colapse"
+        class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+
+          <span id="collapse-text" class="menu-collapsed">Collapse</span>
+        </div>
+      </a>
+
+      <!-- Logo -->
+      <i (click)="logout()"
+        class="fa fa-sign-out list-group-item logo-separator text-info d-flex justify-content-center"
+        style="font-size:36px;">
+      </i>
+    </ul><!-- List Group END-->
+  </div><!-- sidebar-container END -->
